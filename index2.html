@@ -1,0 +1,38 @@
+﻿
+<!DOCTYPE html>
+<!--
+These codes are licensed under CC0.
+http://creativecommons.org/publicdomain/zero/1.0
+-->
+<meta charset="UTF-8">
+
+<script src="./onp-agent.js"></script>
+
+<script>
+
+window.addEventListener( 'DOMContentLoaded', ( ) => {
+
+	let target = document.querySelector( '#onp_products' )
+
+	const products = [
+		[ '今では俺の嫁です', '今では俺の嫁です' ],
+	]
+
+	products.forEach( ary => {
+		let link = document.createElement( 'a' )
+		link.href = `./${ ary[ 0 ] }`
+		link.className = 'onp'
+		link.textContent = ary[ 1 ]
+		target.appendChild( link )
+		target.appendChild( new Text( '　　　' ) )
+		target.appendChild( document.createElement( 'br' ) )
+	} )
+
+} )
+
+</script>
+<br><div id=onp_products style="font-size: 2rem">
+【クリックで作品インストール】<br>
+
+
+</div>
