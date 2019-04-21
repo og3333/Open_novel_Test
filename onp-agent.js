@@ -3,9 +3,9 @@ These codes are licensed under CC0.
 http://creativecommons.org/publicdomain/zero/1.0
 */
 
-{
+;( () => { 'use strict'
 
-const version = '6.0'
+const version = '6.2'
 
 window.addEventListener( 'DOMContentLoaded', ( ) => setTimeout( init, 1 ) )
 
@@ -13,7 +13,10 @@ window.addEventListener( 'DOMContentLoaded', ( ) => setTimeout( init, 1 ) )
 function init ( ) {
 
 	let elms = Array.from( document.getElementsByClassName( 'onp' ) )
-	elms.forEach( e => { e.addEventListener( 'click', onp ) } )
+	elms.forEach( e => {
+		e.addEventListener( 'click', onp )
+		e.relList && e.relList.add( 'opener' )
+	} )
 
 	if ( ! window.parent ) return
 	let player = window.parent
@@ -129,4 +132,4 @@ async function getFile ( data, url ) {
 
 window.onp = onp
 
-}
+} )( );
