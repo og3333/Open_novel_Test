@@ -13,10 +13,20 @@
 	・・・
 	・・・・・・
 	・・・・・・・・・
+・SE
+	SE7_wakeupAlram
 無し
 	ぴっぴぴ
+・SE
+	SE7_wakeupAlram
+無し
 	ぴっぴぴぴっぴぴ
+・SE
+	SE7_wakeupAlram
+無し
 	ぴっぴぴぴっぴぴぴっぴぴ
+・SE
+	無し
 ・BGM
 	BGM_5A子エンド2
 ・背景
